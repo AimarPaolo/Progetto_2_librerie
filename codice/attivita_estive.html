@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home page artesina</title>
+        <meta name="author" content="Paolo Aimar">
+        <meta name="keywords" content="html">
+        <meta name="description" content="Pagina di acquisto dei biglietti">
+        <!--in questo caso faccio un refresh della pagina ogni 600 sec per aggiornarla, non ha senso aggiornare molte volte questa pagina in quanto
+        non ci sono dati che necessitano di aggiornare parecchie volte l'utente-->
+        <meta http-equiv="refresh" content="600">
+        <link rel="stylesheet" href="../css/attivita_stagionali.css">
+    </head>
+    <body>
+    <div class="navbar">
+        <a href="home.php">Home</a>
+        <a href="news.html">Aggiornamenti impianti</a>
+        <a href="skipass.php">Acquisto skipass</a>
+        <!--definisco un identificato per attivare il dropdown in quanto esiste già una classe dichiarata-->
+        <div class="dropdown" id="attiva_dropdown">
+            <button class="dropbtn">Esperienze
+            </button>
+            <div class="dropdown-content">
+                <a class="attiva" href="attivita_estive.html">Estive</a>
+                <a href="attivita_invernali.html">Invernali</a>
+            </div>
+        </div>
+        <a href="carrello.php">Carrello</a>
+    </div> 
+    <h1>Attività estive possibili ad Artesina</h1>
+    <div class="attivita">
+        <h1>Escursionismo</h1>
+        <img src="../immagini/artesina_escursionismo.jpeg" alt="immagine escursionismo">
+        <div class="descrizione">Scopri sentieri panoramici che attraversano boschi, prati fioriti e creste montuose. I percorsi variano 
+            in difficoltà, offrendo opzioni per principianti e esperti. Durante le escursioni, puoi ammirare una varietà di flora e fauna 
+            locali, fare soste presso rifugi di montagna e goderti viste mozzafiato su vallate e cime circostanti.</div>
+    </div>
+    <div class="attivita">
+        <h1>Mountain Bike</h1>
+        <img src="../immagini/mountain_bike_mondoleski.jpeg" alt="mountain bike">
+        <div class="descrizione">Esplora la montagna su due ruote con percorsi di mountain bike che variano da tracciati facili a discese 
+            tecniche per esperti. I sentieri sono ben segnalati e attraversano paesaggi spettacolari, inclusi boschi ombrosi, prati aperti 
+            e terreni rocciosi. Puoi noleggiare una mountain bike in loco e partecipare a tour guidati per scoprire i migliori percorsi.
+        </div>
+    </div>
+    <div class="attivita">
+        <h1>Bob estivo</h1>
+        <img src="../immagini/bob_estivo.jpeg" alt="bob estivo">
+        <div class="descrizione">Prova l'emozione del bob estivo su una pista appositamente progettata che scende lungo il pendio 
+            della montagna. Questa attività è perfetta per tutta la famiglia, offrendo un'esperienza sicura ma adrenalinica. I bob sono 
+            equipaggiati con freni manuali che ti permettono di controllare la velocità mentre sfrecci tra curve e rettilinei, godendo di 
+            una vista mozzafiato sul paesaggio circostante. La pista è realizzata con materiali scorrevoli che assicurano una corsa fluida 
+            e divertente, indipendentemente dalle condizioni meteorologiche. Dopo la discesa, un comodo impianto di risalita ti riporterà in 
+            cima, pronto per un'altra emozionante corsa. Un'attività perfetta per chi cerca divertimento e adrenalina in un ambiente 
+            naturale straordinario.</div>
+    </div>    
+    <div class="attivita">
+        <h1>Fotografia Naturalistica</h1>
+        <video controls>
+            <source src="../video/trekking_video.mp4" type="video/mp4">Your browser does not support the VIDEO tag.
+        </video>
+        <div class="descrizione">Cattura la bellezza della montagna con la tua macchina fotografica, esplorando luoghi incantevoli e 
+            paesaggi spettacolari. Dai panorami mozzafiato delle vette agli intimi dettagli della flora e fauna locali, le opportunità 
+            fotografiche sono infinite. Partecipa a workshop di fotografia per migliorare le tue abilità e scoprire i segreti per scattare 
+            foto straordinarie in ambienti naturali.</div>
+    </div>
+    <!--inserito un logo che, una volta premuto, riporta alla pagina home del sito, verrà inserito in tutte le altre pagine del sito 
+    in modo da dare la possibilità agli utenti di riaccedere alla pagina senza utilizzare la nav bar-->
+    <a href="home.php"><img src="../immagini/logo.jpg" alt="caricamento logo artesina"></a>
+    <footer>
+        <div>Contatti: </div>
+        <a href="mailto:info@artesina.it"><div>Email: info@artesina.it</div></a>
+        <a href="callto:+390174242000"><div>Cellulare: +39 0174 242000</div></a>
+    </footer>
+    </body>
+<html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+    <!--In questo caso utilizzo la stessa pagina delle attività estiva, modificando solamente la attività presenti all'interno della pagina-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Home page artesina</title>
+        <meta name="author" content="Paolo Aimar">
+        <meta name="keywords" content="html">
+        <meta name="description" content="Pagina di acquisto dei biglietti">
+        <!--in questo caso faccio un refresh della pagina ogni 600 sec per aggiornarla, non ha senso aggiornare molte volte questa pagina in quanto
+        non ci sono dati che necessitano di aggiornare parecchie volte l'utente-->
+        <meta http-equiv="refresh" content="600">
+        <link rel="stylesheet" href="../css/attivita_stagionali.css">
+    </head>
+    <body>
+    <div class="navbar">
+        <a href="home.php">Home</a>
+        <a href="news.html">Aggiornamenti impianti</a>
+        <a href="skipass.php">Acquisto skipass</a>
+        <!--definisco un identificato per attivare il dropdown in quanto esiste già una classe dichiarata-->
+        <div class="dropdown" id="attiva_dropdown">
+            <button class="dropbtn">Esperienze
+            </button>
+            <div class="dropdown-content">
+                <a href="attivita_estive.html">Estive</a>
+                <a class="attiva" href="attivita_invernali.html">Invernali</a>
+            </div>
+        </div>
+        <a href="carrello.php">Carrello</a>
+    </div> 
+    <h1>Attività invernali possibili ad Artesina</h1>
+    <div class="attivita">
+        <h1>Sci alpino</h1>
+        <img src="../immagini/sci_alpino.jpeg" alt="sci alpino">
+        <div class="descrizione">Goditi la velocità e l'emozione dello sci alpino lungo le piste ben preparate della montagna. 
+            Con una vasta gamma di dislivelli e piste adatte a tutti i livelli di abilità, dal principiante al professionista, 
+            lo sci alpino è un'attività perfetta per gli amanti della neve. Affitta l'attrezzatura direttamente sul posto e prendi 
+            lezioni con istruttori qualificati per migliorare le tue capacità e divertirti al massimo sulla neve.</div>
+    </div>
+    <div class="attivita">
+        <h1>Escursioni con le ciaspole</h1>
+        <img src="../immagini/ciaspole.jpeg" alt="escursioni con le ciaspole">
+        <div class="descrizione">Esplora la magia della montagna invernale con escursioni guidate utilizzando le ciaspole. 
+            Cammina attraverso paesaggi innevati e boschi incantati, scoprendo la tranquillità e la bellezza dell'inverno. 
+            Le ciaspole ti permettono di muoverti facilmente sulla neve profonda e offrono un modo unico per immergerti nella 
+            natura invernale. Partecipa a tour guidati per esplorare i migliori percorsi e imparare di più sulla flora e fauna 
+            locali durante la stagione fredda.</div>
+    </div>
+    <div class="attivita">
+        <h1>Sci di fondo</h1>
+        <img src="../immagini/sci_fondo.jpeg" alt="sci di fondo">
+        <div class="descrizione">Scivola attraverso paesaggi innevati con lo sci di fondo su piste ben battute che si snodano 
+            tra boschi e valli. Lo sci di fondo è un'attività adatta a tutte le età e livelli di fitness, offrendo un'esperienza 
+            rilassante e gratificante nella natura invernale. Affitta l'attrezzatura in loco e partecipa a lezioni per imparare le 
+            tecniche di base o per perfezionare le tue abilità con istruttori qualificati. Goditi la tranquillità della neve mentre 
+            esplori nuovi percorsi e ammiri i panorami innevati.</div>
+    </div>
+    <div class="attivita">
+        <h1>Escursioni in motoslitta</h1>
+        <img src="../immagini/motoslitte.jpeg" alt="escursioni in motoslitta">
+        <div id="avvisa" class="descrizione">Sperimenta l'avventura e l'adrenalina delle escursioni in motoslitta attraverso paesaggi innevati e 
+            sentieri panoramici. Guida la tua motoslitta attraverso boschi innevati e valli ghiacciate, esplorando luoghi altrimenti 
+            inaccessibili durante l'inverno. Partecipa a tour guidati con guide esperte che ti condurranno attraverso i migliori 
+            percorsi e ti faranno scoprire la bellezza dell'inverno in montagna. Un'attività emozionante adatta a chi cerca un'esperienza 
+            indimenticabile sulla neve.</div><div class="avviso">L'evento non è sfruttabile direttamente ad Artesina, ma è possibile raggiugere in breve tempo Prato Nevoso, dove è invece possibile l'affitto di un giro in motoslitta</div>
+    </div>    
+    <!--inserito un logo che, una volta premuto, riporta alla pagina home del sito, verrà inserito in tutte le altre pagine del sito 
+    in modo da dare la possibilità agli utenti di riaccedere alla pagina senza utilizzare la nav bar-->
+    <a href="home.php"><img id="logo" src="../immagini/logo.jpg" alt="caricamento logo artesina"></a>
+    <footer>
+        <div>Contatti: </div>
+        <a href="mailto:info@artesina.it"><div>Email: info@artesina.it</div></a>
+        <a href="callto:+390174242000"><div>Cellulare: +39 0174 242000</div></a>
+    </footer>
+    </body>
+<html>

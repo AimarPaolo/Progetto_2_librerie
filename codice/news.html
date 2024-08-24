@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang=it>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home page artesina</title>
+        <meta name="author" content="Paolo Aimar">
+        <meta name="keywords" content="html">
+        <meta name="description" content="Pagina di acquisto dei biglietti">
+        <!--in questo caso faccio un refresh della pagina ogni 600 sec per aggiornarla, non ha senso aggiornare molte volte questa pagina in quanto
+        non ci sono dati che necessitano di aggiornare parecchie volte l'utente-->
+        <meta http-equiv="refresh" content="600">
+        <link rel="stylesheet" href="../css/skipass.css">
+        <!--lo script poteva anche essere scritto direttamente in un file javascript a parte.-->
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            function myFunction() {
+              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="home.php">Home</a>
+            <a class="attiva" href="news.html">Aggiornamenti impianti</a>
+            <a href="skipass.php">Acquisto skipass</a>
+            <!--definisco un identificato per attivare il dropdown in quanto esiste già una classe dichiarata-->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Esperienze
+                </button>
+                <div class="dropdown-content">
+                    <a href="attivita_estive.html">Estive</a>
+                    <a href="attivita_invernali.html">Invernali</a>
+                </div>
+            </div>
+            <a href="carrello.php">Carrello</a>
+        </div> 
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>ATTENZIONE!</strong> Pericolo valanghe! Chiusi gli impianti di Prato Nevoso.
+        </div>
+        <div class="header">
+            <h2>Le notizie dell'ultimo periodo</h2>
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+          </div>
+          <div class="content">
+            <h3>CONCERTO FERRAGOSTO 2024</h3>
+            <p>Per raggiungere l'area del concerto da Artesina sarà possibile usufruire della Seggiovia Colletto, 
+                aperta dalle ore 09.00 alle ore 18.00, con possibilità di rientro su Bob Estivo al costo di 10,00 Euro, 
+                per proseguire a piedi da quota 1620 metri lungo il sentiero in direzione Balma.
+                In alternativa è possibile salire a piedi da Artesina 1400 percorrendo il sentiero Colletto Fava fino 
+                alla Baita del Colletto, per poi proseguire lungo il sentiero in direzione Balma, per un dislivello totale 
+                di 500 metri e un tempo di percorrenza di circa 90 minuti. 
+            </p>
+            <h3>SUMMER PARK Apertura 6 Luglio</h3>
+            <p>
+                Bob Gratis per i bambini di altezza inferiore a m 1,20 accompagnati da un adulto pagante
+                Biglietti Ragazzo per i nati dopo il 01/01/2010
+                Biglietti Multipass validi su Bob, Tubing e Bike Park Artesina
+                Pista da Bob chiusa in caso di pioggia o scarsa visibilità
+                Casco e dotazioni di protezione obbligatori lungo i tracciati del Bike Park
+                Rispettare la segnaletica posta lungo la Pista da Bob e i tracciati del Bike Park
+                Foto biglietti scattate direttamente in biglietteria
+            </p>
+            <h3>Un paradiso per gli arrampicatori</h3>
+            <p>Oltre alla sfida sportiva, arrampicare sul Monte Moro regala viste 
+                spettacolari sulle valli e sulle montagne circostanti. Dall’alto delle pareti,
+                 si può godere di un panorama unico che abbraccia l’intero arco alpino ligure. 
+                 La sensazione di libertà e di connessione con la natura è impareggiabile, rendendo ogni scalata 
+                 un’esperienza memorabile. La falesia del Monte Moro a Prato Nevoso rappresenta una destinazione imperdibile 
+                 per gli amanti dell’arrampicata. Con le sue vie varie e tecniche, i panorami mozzafiato e le eccellenti condizioni 
+                 di sicurezza, questo luogo offre esperienze indimenticabili per arrampicatori di tutti i livelli. Preparati a 
+                 sfidare te stesso e a scoprire la bellezza della montagna da un punto di vista unico.
+                </p>
+            <h3>Escursionismo: un’avventura tra i sentieri</h3>
+            <p>
+                Artesina è circondata da una rete di sentieri escursionistici che attraversano paesaggi mozzafiato, permettendo agli appassionati di trekking di esplorare la bellezza incontaminata delle Alpi Liguri. I sentieri sono ben segnalati e variano in difficoltà, dai percorsi facili adatti alle famiglie a quelli più impegnativi per gli escursionisti esperti. Uno dei percorsi più popolari è il Sentiero del Marguareis, che offre viste spettacolari sulle valli circostanti e sulla flora e fauna locali.
+                Per chi ama le camminate tranquille, il percorso panoramico che parte dalla telecabina La Rossa è perfetto. 
+                A 2000 metri di altitudine, il panorama è mozzafiato e la camminata è piacevole e accessibile a tutti.
+            </p>
+            <h3>ISCRIVITI ALLA GARA KIDS PIÙ ATTESA DEL BIKEPARK PRATO NEVOSO!</h3>
+            <div>Sabato 31 agosto e domenica 1° settembre iscriviti alla Rookies Race 
+                e diventa protagonista di un weekend di contest e riding dedicato a tutti 
+                gli #Under18 </div>
+          </div> 
+        <a href="home.php"><img id="logo" src="../immagini/logo.jpg" alt="caricamento logo artesina"></a>
+    <footer>
+        <div>Contatti: </div>
+        <a href="mailto:info@artesina.it"><div>Email: info@artesina.it</div></a>
+        <a href="callto:+390174242000"><div>Cellulare: +39 0174 242000</div></a>
+    </footer>       
+    </body>
+</html>
